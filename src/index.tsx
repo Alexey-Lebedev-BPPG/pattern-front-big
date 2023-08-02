@@ -5,6 +5,7 @@ import App from './app/App';
 import { ErrorBoundary } from './app/providers/ErrorBoundary/ErrorBoundary';
 import { StoreProvider } from './app/providers/StoreProvider/ui/StoreProvider';
 import { ThemeProvider } from './app/providers/ThemeProvider';
+import { ApolloProvider } from './app/providers/ApolloProvider';
 
 const container = document.getElementById('root');
 
@@ -15,11 +16,13 @@ const root = createRoot(container);
 root.render(
   <Router>
     <StoreProvider>
-      <ErrorBoundary>
-        <ThemeProvider>
-          <App />
-        </ThemeProvider>
-      </ErrorBoundary>
+      <ApolloProvider>
+        <ErrorBoundary>
+          <ThemeProvider>
+            <App />
+          </ThemeProvider>
+        </ErrorBoundary>
+      </ApolloProvider>
     </StoreProvider>
   </Router>,
 );
