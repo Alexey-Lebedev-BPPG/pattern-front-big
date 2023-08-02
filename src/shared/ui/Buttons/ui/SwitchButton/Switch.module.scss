@@ -1,0 +1,68 @@
+@import "src/app/styles/fonts";
+
+.switchWrapper {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.switch {
+  position: relative;
+  width: 42px;
+  height: 22px;
+
+  input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+}
+
+.title {
+  @include BodyS-600;
+
+  color: var(--g-300);
+  white-space: nowrap;
+}
+
+
+.slider {
+  cursor: pointer;
+
+  position: absolute;
+  inset: 0;
+
+  background-color: var(--g-600);
+
+  transition: .4s;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    bottom: 5px;
+    left: 4px;
+
+    width: 12px;
+    height: 12px;
+
+    background-color: var(--main-white);
+
+    transition: .4s;
+  }
+}
+
+input:checked+.slider {
+  background-color: var(--main-green);
+}
+
+input:checked+.slider::before {
+  transform: translateX(22px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round::before {
+  border-radius: 50%;
+}

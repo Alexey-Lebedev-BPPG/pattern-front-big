@@ -1,0 +1,42 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-width: 1432px;
+  min-height: calc(100vh - 100px - 88px);
+}
+
+.content {
+  display: flex;
+  flex: auto;
+  gap: 0.5rem;
+  align-items: center;
+
+  width: 100%;
+  max-width: 1432px;
+}
+
+.trigger {
+  height: 20px;
+  margin: 10px;
+}
+
+.left {
+  justify-content: flex-start !important;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+.top {
+  align-items: flex-start;
+}
+
+.bottom {
+  align-items: flex-end;
+}

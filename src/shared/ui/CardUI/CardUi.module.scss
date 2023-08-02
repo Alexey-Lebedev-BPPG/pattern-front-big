@@ -1,0 +1,16 @@
+@import "src/app/styles/fonts";
+
+@import "src/app/styles/mixinScroll";
+
+.CardUi {
+  cursor: pointer;
+
+  display: flex;
+
+  width: 20.625rem;
+  height: 30.75rem;
+  padding: 1rem;
+
+  background: var(--g-900);
+  border-radius: 16px;
+}

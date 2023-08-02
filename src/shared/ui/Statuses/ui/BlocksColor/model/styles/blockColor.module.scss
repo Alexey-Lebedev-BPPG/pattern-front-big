@@ -1,0 +1,93 @@
+@import "src/app/styles/fonts";
+
+.cardCosts {
+  display: flex;
+  gap: 1.5rem;
+
+  height: fit-content;
+
+  color: var(--main-black);
+
+  border-radius: 0.75rem;
+
+  .line {
+    width: 100%;
+    border: 1px dashed var(--main-black-40);
+  }
+
+  p {
+    @include BodyM-XS-400;
+  }
+
+  h5 {
+    @include H5-CL;
+
+    z-index: 1;
+  }
+
+  h3 {
+    @include Body-Tiny-800;
+
+    opacity: 0.8;
+  }
+
+  p>p>span {
+    @include BodyM-XS-600;
+  }
+
+  .block {
+    position: relative;
+
+    width: 100%;
+    min-width: 9.5rem;
+    padding: 0.5rem 0.75rem;
+
+    border-radius: 0.75rem;
+
+    .top {
+      width: 100%;
+
+      span {
+        @include BodyM-XS-400;
+
+        margin-top: 0.25rem;
+      }
+    }
+  }
+
+  svg {
+    fill: var(--main-black-80);
+
+    circle {
+      fill: var(--main-black-18);
+    }
+  }
+
+  .wrapper {
+    width: 100%;
+
+    svg {
+      margin-top: -1rem;
+      margin-left: -0.375rem;
+    }
+
+    .note {
+      position: absolute;
+      top: 1.5rem;
+      right: 0.5rem;
+      display: flex;
+
+      svg {
+        fill: var(--main-black-40);
+      }
+    }
+  }
+
+  .padding {
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+.full {
+  width: 100%;
+}

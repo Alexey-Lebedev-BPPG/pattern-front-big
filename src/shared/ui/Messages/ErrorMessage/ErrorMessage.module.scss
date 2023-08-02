@@ -1,0 +1,11 @@
+@import "src/app/styles/fonts";
+
+@import "src/app/styles/mixinScroll";
+
+.ErrorMessage {
+
+  @include BodyS-600;
+
+  margin-top: -10px;
+  color: var(--o-400);
+}

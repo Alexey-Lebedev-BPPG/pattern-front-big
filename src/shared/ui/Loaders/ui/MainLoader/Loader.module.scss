@@ -1,0 +1,62 @@
+@import "src/app/styles/fonts";
+
+.page {
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: var(--main-black);
+}
+
+.loader {
+  cursor: wait;
+
+  position: absolute;
+  z-index: 1001;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+
+  background: var(--g-700);
+  border-radius: 1rem;
+
+  p {
+    @include BodyM-600;
+
+    color: var(--g-200);
+  }
+}
+
+.progress {
+  z-index: 110;
+
+  width: 500px;
+  height: 8px;
+
+  background: linear-gradient(var(--o-400) 0 0) left/0% 100% no-repeat var(--g-600);
+  border-radius: 100px;
+  /* stylelint-disable-next-line property-no-vendor-prefix */
+  -webkit-mask: linear-gradient(90deg, green 164px, #0000 0) left/34% 100%;
+
+  animation: progresss 1.5s infinite steps(4);
+}
+
+@keyframes progresss {
+  100% {
+    background-size: 134% 100%;
+  }
+}

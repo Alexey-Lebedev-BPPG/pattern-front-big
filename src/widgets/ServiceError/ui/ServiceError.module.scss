@@ -1,0 +1,17 @@
+@import "src/app/styles/fonts";
+
+.ServiceError {
+  height: 100vh;
+}
+
+.title {
+  @include H3-CL;
+
+  color: var(--main-white);
+}
+
+.subTitle {
+  @include BodyL-400;
+
+  color: var(--g-200);
+}

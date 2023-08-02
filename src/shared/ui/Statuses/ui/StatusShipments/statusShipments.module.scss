@@ -1,0 +1,51 @@
+@import "src/app/styles/fonts";
+
+.status-shipments {
+  border-radius: 1rem 0 0;
+
+  p {
+    @include BodyM-XS-600;
+
+    padding: 0.25rem 0 0.25rem 0.25rem;
+    text-transform: uppercase;
+  }
+
+  .left {
+    padding: 0.5rem 1rem 0.5rem 2rem;
+    border-radius: 1rem 0 0;
+
+    p {
+      color: var(--main-black);
+    }
+  }
+
+  .right {
+    padding: 0.5rem 2rem 0.5rem 1rem;
+    background: var(--g-600);
+    border-radius: 0 0 1rem;
+
+    p {
+      color: var(--main-white);
+    }
+  }
+
+  .FullyMinted,
+  .PartlyMinted,
+  .Delivered {
+    background: var(--main-green);
+  }
+
+  .New,
+  .Canceled,
+  .Pending,
+  .PaymentPending,
+  .PaymentReceived {
+    background: var(--o-300);
+  }
+
+  .Shipped,
+  .Received,
+  .Processing {
+    background: var(--b-400);
+  }
+}

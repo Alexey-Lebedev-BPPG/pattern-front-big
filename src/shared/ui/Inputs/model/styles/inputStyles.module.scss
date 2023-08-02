@@ -1,0 +1,84 @@
+@import "src/app/styles/fonts";
+
+.container {
+  position: relative;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.label {
+  @include BodyS-600;
+
+  color: var(--main-white);
+}
+
+.startIcon,
+.endIcon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  svg {
+    fill: var(--g-200);
+  }
+}
+
+.startIcon {
+  left: 1rem;
+}
+
+.endIcon {
+  right: 1rem;
+}
+
+.errorText {
+  @include BodyS-600;
+
+  color: var(--error-500);
+  fill: var(--error-500);
+}
+
+.error {
+  word-break: break-all;
+  border: 1px solid var(--error-500) !important;
+}
+
+.input {
+  @include BodyS-600;
+
+  resize: none;
+
+  padding: 1rem;
+
+  color: var(--g-50);
+
+  background: transparent;
+  border: 1px solid var(--g-600);
+  border-radius: 0.5rem;
+
+  fill: var(--g-200);
+
+  &::placeholder {
+    @include BodyS-600;
+
+    color: var(--g-500);
+  }
+
+  &:focus-visible {
+    border: 1px solid transparent;
+    outline: 2px solid var(--g-50);
+    outline-offset: unset;
+  }
+
+  &:hover {
+    background: var(--g-700);
+  }
+
+  &:disabled {
+    color: var(--g-500);
+    background-color: var(--g-800);
+    border: 1px solid transparent;
+  }
+}

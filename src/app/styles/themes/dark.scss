@@ -1,0 +1,82 @@
+.app_dark_theme {
+  // Main colors
+  --main-white: #dfe0e1;
+  --main-0-white: #e8eaed;
+  --main-black: #121212;
+  --main-black-80: rgb(13 13 13 / 80%);
+  --main-black-40: rgb(13 13 13 / 40%);
+  --main-black-20: rgb(13 13 13 / 20%);
+  --main-black-18: rgb(13 13 13 / 18%);
+  --main-black-10: rgb(13 13 13 / 10%);
+  --main-green: #2ef098;
+
+  // Blue colors
+  --b-400: #5beaff;
+
+  // Orange colors
+  --o-900: #442d19;
+  --o-700: #83530d;
+  --o-600: #ba7205;
+  --o-500: #e35201;
+  --o-400: #ff7c01;
+  --o-300: #f90;
+  --o-15: rgb(255 124 1 / 15%);
+
+  // Grayscale colors
+  --g-900: #1d1d1d;
+  --g-800: #242424;
+  --g-700: #282828;
+  --g-600: #3d3d3d;
+  --g-500: #595656;
+  --g-400: #727476;
+  --g-300: #828585;
+  --g-200: #939393;
+  --g-100: #dbdbdb;
+  --g-50: #e6e7e7;
+
+  // Errors colors
+  --error-900: #7c0505;
+  --error-700: #dc2223;
+  --error-500: #ff4445;
+  --error-300: #ee8686;
+
+  // Warnings colors
+  --warning-900: #4e1103;
+  --warning-700: #dc8c14;
+  --warning-500: #ffa927;
+  --warning-300: #f6b95d;
+
+  // Success colors
+  --success-900: #00462d;
+  --success-700: #199c6d;
+  --success-500: #4ac99b;
+  --success-300: #93d9a7;
+
+  // Info colors
+  --info-900: #043c6f;
+  --info-700: #389ffe;
+  --info-500: #70b6f6;
+  --info-300: #98cbfa;
+  --info-transparent: rgb(59 99 139 / 2%);
+
+  // Secondary colors
+  --secondary-blue: #4dbfd0;
+  --secondary-dark-blue: #026375;
+  --secondary-dark-orange: #d16500;
+
+  // Brand colors
+  --w-b-600: #34cde3;
+  --w-green: #00ffa3;
+
+  // Grayscale colors
+  --w-g-1000: #000;
+  --w-g-900: #111010;
+  --w-g-0: #fff;
+
+  // Transparent colors
+  --w-black-tr-90: rgb(0 0 0 / 9%);
+  --w-white-tr-5: rgb(255 255 255 / 1%);
+
+  // sealedBoxes
+  --sealed-box-color: #ec9191;
+}

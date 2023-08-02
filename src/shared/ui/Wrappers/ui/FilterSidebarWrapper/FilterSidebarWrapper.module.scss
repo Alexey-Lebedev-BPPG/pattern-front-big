@@ -1,0 +1,48 @@
+@import "src/app/styles/fonts";
+
+.filterSidebarWrapper {
+  position: sticky;
+  top: 100px;
+}
+
+.Wrapper {
+  width: 20.625rem;
+  height: 100%;
+  min-height: 57.5rem;
+  padding: 24px;
+
+  background: var(--g-900);
+  border-radius: 16px;
+
+  animation: transform-close 0.5s;
+}
+
+.open {
+  width: 20.625rem;
+  opacity: 1;
+  animation: transform-open 0.5s;
+}
+
+@keyframes transform-open {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+
+  100% {
+    width: 20.625rem;
+    opacity: 1;
+  }
+}
+
+@keyframes transform-close {
+  0% {
+    width: 20.625rem;
+    opacity: 1;
+  }
+
+  100% {
+    width: 0.2rem;
+    opacity: 0;
+  }
+}

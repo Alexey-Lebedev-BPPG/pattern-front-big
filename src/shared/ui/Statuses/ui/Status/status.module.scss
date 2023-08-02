@@ -1,0 +1,38 @@
+@import "src/app/styles/fonts";
+
+.status {
+  @include BodyM-XS-600;
+
+  padding: 7px 0.75rem;
+  color: var(--main-black);
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+
+  span {
+    text-wrap: nowrap;
+  }
+}
+
+.Default {
+  background: rgb(18 18 18 / 12%);
+}
+
+.Transferred,
+.AwaitingSign,
+.Minted {
+  color: var(--main-green);
+  background: rgb(46 240 152 / 15%);
+}
+
+.Rejected,
+.RequestedBack,
+.Burned {
+  color: var(--warning-500);
+  background: var(--o-15);
+}
+
+.Burned {
+  color: var(--error-500);
+  background: #3f2323;
+  fill: var(--error-500);
+}

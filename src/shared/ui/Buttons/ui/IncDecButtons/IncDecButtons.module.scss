@@ -1,0 +1,20 @@
+@import "src/app/styles/fonts";
+
+.IncDecButtonsWrapper {
+  width: 11.938rem;
+  height: 3rem;
+  padding: 0.5rem;
+
+  border: 1px solid var(--g-500);
+  border-radius: 0.375rem;
+}
+
+.buttonItem {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.25rem;
+
+  background: var(--g-800);
+
+  fill: var(--g-500);
+}

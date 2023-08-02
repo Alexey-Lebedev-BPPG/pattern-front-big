@@ -1,0 +1,53 @@
+@import "./fonts";
+@import "./mixinScroll";
+@import "./normalizeReset";
+@import "./themes/dark";
+@import "./variables/global";
+
+* {
+  @include scroll-8;
+}
+
+html {
+  @include scroll-8;
+
+  background: #121212;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+
+  font-family: Inter, Manrope, sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: clash-display;
+  font-weight: 600;
+  src:
+    local("clash-display"),
+    url("./fonts/ClashDisplay-Variable.ttf") format("woff");
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-height: 100vh;
+
+  print-color-adjust: exact;
+}
+
+.snackbars-container {
+  position: relative;
+  width: 100%;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}

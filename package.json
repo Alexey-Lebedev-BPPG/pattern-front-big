@@ -1,0 +1,40 @@
+{
+  "name": "pattern",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "app.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "webpack serve --env port=5000 --env mode=development",
+    "dev:debug": "webpack serve --env port=3000 --env mode=development --env modeDebug=true",
+    "build:dev": "webpack --env mode=development",
+    "build:prod": "webpack --env mode=production",
+    "lint:ts": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
+    "lint:ts:fix": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
+    "prettier": "npx prettier --write **/*.{ts,tsx,json}",
+    "lint:scss": "npx stylelint \"src/**/*.scss\"",
+    "lint:scss:fix": "npx stylelint \"src/**/*.scss\" --fix",
+    "test:unit": "jest --config ./configs/jest/jest.config.ts",
+    "test:e2e": "cypress open",
+    "test:ui:json": "node scripts/generate-visual-json-report.js",
+    "storybook": "storybook dev -p 6006 -c ./configs/storybook",
+    "build-storybook": "storybook build -c ./configs/storybook",
+    "generate:slices": "node ./scripts/createSlice/index.js",
+    "remove-features": "npx ts-node ./scripts/remove-feature.ts",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

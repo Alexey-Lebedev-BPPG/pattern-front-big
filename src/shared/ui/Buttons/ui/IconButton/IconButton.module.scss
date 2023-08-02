@@ -1,0 +1,103 @@
+@import "src/app/styles/fonts";
+
+.iconButton {
+  cursor: pointer;
+
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent;
+  border: none;
+  border-radius: 0.25rem;
+
+  p {
+    @include B-Small;
+  }
+
+  a {
+    line-height: 0.5rem;
+  }
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.active {
+  color: var(--main-white) !important;
+  fill: var(--main-white) !important;
+}
+
+.ghost {
+  fill: var(--g-200);
+
+  &:hover {
+    background: var(--g-600);
+  }
+
+  &:active {
+    background: var(--main-black);
+  }
+
+  &:disabled {
+    background: var(--g-800);
+    fill: var(--g-500);
+  }
+}
+
+.filled {
+  background: var(--g-700);
+  fill: var(--g-200);
+
+  &:hover {
+    background: var(--g-600);
+  }
+
+  &:active {
+    background: var(--main-black);
+  }
+
+  &:disabled {
+    background: var(--g-900);
+    fill: var(--g-600);
+  }
+}
+
+.transparent {
+  fill: var(--g-700);
+
+  &:hover {
+    background: var(--main-black-10);
+  }
+
+  &:active {
+    background: var(--main-black-20);
+    fill: var(--g-900);
+  }
+
+  &:disabled {
+    fill: var(--main-black-18);
+  }
+}
+
+.size_16 {
+  width: 1rem;
+  height: 1rem;
+}
+
+.size_24 {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.size_32 {
+  width: 2rem;
+  height: 2rem;
+}
+
+.size_40 {
+  width: 2.5rem;
+  height: 2.5rem;
+}

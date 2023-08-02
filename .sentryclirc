@@ -1,0 +1,6 @@
+[defaults]
+project=test
+org=test
+
+[auth]
+token=test

@@ -1,0 +1,13 @@
+/.git
+/.idea
+/.vscode
+/.github
+/build
+*.tsx
+*.jsx
+*.ts
+*.js
+*.json
+*.md
+*.svg
+/node_modules

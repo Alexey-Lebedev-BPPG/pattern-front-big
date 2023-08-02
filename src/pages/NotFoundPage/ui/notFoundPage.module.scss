@@ -1,0 +1,15 @@
+@import "src/app/styles/fonts";
+
+.not-found-page {
+  color: var(--main-white);
+
+  h1 {
+    @include H3-CL;
+  }
+
+  h2 {
+    @include H4;
+
+    text-transform: uppercase;
+  }
+}

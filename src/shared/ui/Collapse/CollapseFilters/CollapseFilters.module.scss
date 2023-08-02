@@ -1,0 +1,38 @@
+@import "src/app/styles/fonts";
+@import "src/app/styles/mixinScroll";
+
+.CollapseFilters {
+  width: 100%;
+  color: #fff;
+  border-bottom: 1px solid #3d3d3d;
+}
+
+.open {
+  display: flex !important;
+  gap: 1rem !important;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 2px;
+}
+
+.statusCollapse {
+  overflow: auto;
+  max-height: 15rem;
+  padding-bottom: 1rem;
+
+  &::-webkit-scrollbar-thumb {
+    display: none;
+  }
+}
+
+.titleWrapper {
+
+  @include H5;
+
+  cursor: pointer;
+  color: var(--main-white);
+}

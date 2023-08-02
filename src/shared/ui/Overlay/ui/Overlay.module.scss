@@ -1,0 +1,17 @@
+.overlay {
+  cursor: pointer;
+
+  position: fixed;
+  z-index: var(--overlay-z-index);
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgb(0 0 0 / 80%);
+}
+
+.blur {
+  backdrop-filter: blur(2px);
+}

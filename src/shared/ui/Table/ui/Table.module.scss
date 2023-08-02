@@ -1,0 +1,64 @@
+@import "src/app/styles/fonts";
+
+.list-table {
+  padding: 2rem;
+  background-color: var(--g-900);
+  border-radius: 1rem;
+
+  .th {
+    @include BodyM-XS-600;
+
+    color: var(--g-300);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .tb {
+    @include BodyS-600;
+
+    color: var(--main-white);
+
+    .row {
+      display: flex;
+
+      width: 100%;
+      padding: 1rem 0;
+
+      color: inherit;
+      text-decoration: unset;
+
+      border-bottom: 1px solid var(--g-700);
+
+      p {
+        overflow: hidden;
+        display: -webkit-box;
+
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+      }
+    }
+
+    .cursor {
+      cursor: pointer;
+    }
+
+    .empty-table {
+      @include BodyS-400;
+
+      height: 100%;
+      color: var(--g-200);
+    }
+
+    .loader {
+      cursor: initial;
+      padding-top: 1rem;
+      border: none;
+    }
+  }
+}
+
+.without-last-border {
+  .row:last-child {
+    border: none;
+  }
+}

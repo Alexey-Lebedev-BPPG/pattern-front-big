@@ -1,0 +1,53 @@
+@import "src/app/styles/fonts";
+
+@mixin scroll-8 {
+  ::-webkit-scrollbar {
+    /* scrollbar */
+    width: 0.5rem;
+
+    /* width for vertical scrolling */
+    height: 0.625rem;
+
+    /* height for horizontal scrolling */
+    background-color: inherit;
+  }
+
+  /* scrollbar slider */
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--g-300);
+    border-radius: 1.25rem;
+  }
+
+  // ::-webkit-scrollbar-thumb:hover {
+  //   background-color: #253861;
+  // }
+
+  /* Arrows */
+  ::-webkit-scrollbar-button:vertical:start:decrement {
+    display: none;
+  }
+
+  ::-webkit-scrollbar-button:vertical:end:increment {
+    display: none;
+  }
+
+  ::-webkit-scrollbar-button:horizontal:start:decrement {
+    display: none;
+  }
+
+  ::-webkit-scrollbar-button:horizontal:end:increment {
+    display: none;
+  }
+}
+
+@mixin scroll-hidden {
+  ::-webkit-scrollbar {
+    /* scrollbar */
+    width: 0 !important;
+
+    /* width for vertical scrolling */
+    height: 0.625rem;
+
+    /* height for horizontal scrolling */
+  }
+}

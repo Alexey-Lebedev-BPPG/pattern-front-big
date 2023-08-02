@@ -1,0 +1,257 @@
+@import "src/app/styles/fonts";
+
+.button {
+  cursor: pointer;
+
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+
+  height: fit-content;
+
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+
+  border-radius: 6.25rem;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.left {
+  flex-direction: unset;
+}
+
+.right {
+  flex-direction: row-reverse;
+}
+
+.large {
+  @include B-Large;
+
+  min-width: 12rem;
+  padding: 1rem 2.5rem;
+}
+
+.large-alternative {
+  padding: 1rem 2.5rem;
+}
+
+.medium {
+  @include B-Medium;
+
+  min-width: 9rem;
+  padding: 0.75rem 2.5rem;
+}
+
+.medium-alternative {
+  @include W-BTN-MEDIUM;
+
+  padding: 0.625rem 1.875rem;
+  border-radius: 12.5rem;
+}
+
+.small {
+  @include B-Small;
+
+  min-width: 5.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.small-alternative {
+  padding: 0.5rem 1.25rem;
+}
+
+.clear {
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.active {
+  color: var(--main-white) !important;
+  fill: var(--main-white) !important;
+
+  &:hover {
+    background: transparent;
+  }
+}
+
+.primary {
+  color: var(--main-black);
+  background: var(--main-white);
+  border: none;
+  fill: var(--main-black);
+
+  &:hover {
+    background: var(--g-50);
+  }
+
+  &:disabled {
+    color: var(--g-500) !important;
+    background: var(--g-700) !important;
+    fill: var(--g-500) !important;
+  }
+
+  &:active {
+    background: var(--g-100);
+  }
+}
+
+.primary-alternative {
+  color: var(--w-g-1000);
+  background: var(--w-g-0);
+  border: none;
+  fill: var(--w-g-1000);
+
+  &:hover {
+    background: var(--g-200);
+  }
+
+  &:disabled {
+    color: var(--g-500) !important;
+    background: var(--g-800) !important;
+    fill: var(--g-500) !important;
+  }
+
+  &:active {
+    background: var(--g-500);
+  }
+}
+
+.secondary {
+  color: var(--main-white);
+  background: transparent;
+  border: 1px solid var(--g-500);
+  fill: var(--main-white);
+
+  &:hover {
+    color: var(--g-50);
+    background: var(--g-900);
+    fill: var(--g-50);
+  }
+
+  &:disabled {
+    color: var(--g-600) !important;
+    background: transparent !important;
+    fill: var(--g-600) !important;
+  }
+
+  &:active {
+    color: var(--g-50);
+    background: var(--g-500);
+    fill: var(--g-50);
+  }
+}
+
+.secondary-alternative {
+  color: var(--w-g-0);
+  background: transparent;
+  border: 1px solid var(--g-300);
+  fill: var(--w-g-0);
+
+  &:hover {
+    background: var(--g-800);
+    border-color: 1px solid var(--g-900);
+  }
+
+  &:disabled {
+    background: transparent !important;
+    border-color: 1px solid var(--g-900) !important;
+  }
+
+  &:active {
+    background: var(--g-300);
+    border: none;
+  }
+}
+
+.ghost {
+  color: var(--g-200);
+  background: transparent;
+  border: none;
+  fill: var(--g-200);
+
+  &:hover {
+    color: var(--main-white);
+    fill: var(--main-white);
+  }
+
+  &:disabled {
+    color: var(--g-700) !important;
+    background: transparent !important;
+    fill: var(--g-700) !important;
+  }
+
+  &:active {
+    color: var(--g-500);
+    fill: var(--g-500);
+  }
+}
+
+.black {
+  color: var(--main-white);
+  background: var(--main-black);
+  fill: var(--main-white);
+
+  &:hover {
+    background: var(--g-700);
+  }
+
+  &:disabled {
+    color: var(--g-200) !important;
+    background: var(--g-100) !important;
+    fill: var(--g-200) !important;
+  }
+
+  &:active {
+    color: var(--g-200);
+    background: var(--g-900);
+    fill: var(--g-200);
+  }
+}
+
+.black-alternative {
+  color: var(--w-g-0);
+  background: var(--w-g-1000);
+  fill: var(--w-g-0);
+
+  &:hover {
+    background: var(--g-800);
+  }
+
+  &:disabled {
+    color: var(--g-500) !important;
+    background: var(--g-800) !important;
+    fill: var(--g-500) !important;
+  }
+
+  &:active {
+    color: var(--g-300);
+    background: var(--w-g-900);
+    fill: var(--g-300);
+  }
+}
+
+.white {
+  color: var(--main-black);
+  background: white;
+  border: none;
+  fill: var(--main-black);
+
+  &:hover {
+    background: var(--g-100);
+  }
+
+  &:disabled {
+    color: #575454 !important;
+    background: var(--g-700) !important;
+  }
+
+  &:active {
+    background: var(--g-200);
+  }
+}

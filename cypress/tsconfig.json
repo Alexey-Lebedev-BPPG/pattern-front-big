@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "lib": ["es5", "dom"],
+    "types": ["cypress", "node"],
+    "isolatedModules": false
+  },
+  "include": [
+    "../configs/jest/setupTests.ts",
+    "../src/**/*.ts",
+    "../src/**/*.tsx",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "extends": "../tsconfig"
+}

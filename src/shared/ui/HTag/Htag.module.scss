@@ -1,0 +1,54 @@
+@import "src/app/styles/fonts";
+@import "src/app/styles/mixinScroll";
+
+.W_H1_CL {
+  @include W-H1-CL;
+}
+
+.W_H1 {
+  @include W-H1;
+}
+
+.W_H2 {
+  @include W-H2;
+}
+
+.W_H2_CL {
+  @include W-H2-CL;
+}
+
+.W_H3 {
+  @include W-H3;
+}
+
+.W_H3_CL {
+  @include W-H3-CL;
+}
+
+.W_H4 {
+  @include W-H4;
+}
+
+.H4_CL {
+  @include H4-CL;
+}
+
+.W_H4_CL {
+  @include W-H4-CL;
+}
+
+.W_H5_CL {
+  @include W-H5-CL;
+}
+
+.W_H6_CL {
+  @include W-H6-CL;
+}
+
+.W_H7_CL {
+  @include W-H7-CL;
+}
+
+.W_H8_CL_UP {
+  @include W-H8-CL-UP;
+}

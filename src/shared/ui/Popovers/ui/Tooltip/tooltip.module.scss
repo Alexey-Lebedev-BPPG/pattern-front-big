@@ -1,0 +1,103 @@
+@import "src/app/styles/fonts";
+
+.tooltip,
+.hover {
+  position: relative;
+
+  .tooltip-text,
+  .active {
+    position: absolute;
+    z-index: 100;
+    left: 50%;
+    transform: translateX(-50%);
+
+    min-width: 4rem;
+    padding: 0.25rem;
+
+    visibility: hidden;
+    opacity: 1;
+    background-color: var(--g-100);
+    border-radius: 0.375rem;
+
+    transition: opacity 0.3s;
+
+    &::before {
+      pointer-events: none;
+      content: " ";
+
+      position: absolute;
+      left: 50%;
+
+      width: 0;
+      height: 0;
+      margin-left: calc(6px * -1);
+
+      border: solid transparent;
+      border-width: 6px;
+    }
+
+    p {
+      @include BodyM-XS-600;
+
+      color: var(--g-900);
+      text-align: center;
+    }
+  }
+
+  .active {
+    visibility: visible;
+  }
+}
+
+.hover:hover {
+  .tooltip-text {
+    visibility: visible;
+  }
+}
+
+.top {
+  bottom: calc(100% + 8px) !important;
+
+  &::before {
+    top: 100% !important;
+    border-top-color: var(--g-100) !important;
+  }
+}
+
+.right {
+  top: 50% !important;
+  left: calc(100% + 8px) !important;
+  transform: translateX(0) translateY(-50%) !important;
+
+  &::before {
+    top: 50% !important;
+    left: calc(6px * -0.9) !important;
+    transform: translateX(0) translateY(-50%) !important;
+    border-right-color: var(--g-100) !important;
+  }
+}
+
+.bottom {
+  top: calc(100% + 8px) !important;
+
+  &::before {
+    bottom: 100% !important;
+    border-bottom-color: var(--g-100) !important;
+  }
+}
+
+.left {
+  top: 50% !important;
+  right: calc(100% + 8px) !important;
+  left: auto !important;
+  transform: translateX(0) translateY(-50%) !important;
+
+  &::before {
+    top: 50% !important;
+    right: calc(6px * -1.9) !important;
+    left: auto !important;
+    transform: translateX(0) translateY(-50%) !important;
+
+    border-left-color: var(--g-100) !important;
+  }
+}

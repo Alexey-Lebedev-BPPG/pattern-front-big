@@ -1,0 +1,26 @@
+@import "src/app/styles/fonts";
+@import "src/app/styles/mixinScroll";
+
+.name {
+  @include BodyS-600;
+
+  color: var(--g-300);
+}
+
+.value {
+  @include BodyS-600;
+
+  color: var(--main-white);
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align-last: left;
+}
+
+.right {
+  text-align: right;
+}

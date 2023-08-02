@@ -1,0 +1,35 @@
+@import "src/app/styles/fonts";
+
+.tiny-radio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  p {
+    @include BodyM-400;
+
+    padding-right: 0.5rem;
+    color: var(--main-white);
+    text-transform: capitalize;
+  }
+
+  .wrapper {
+    display: flex;
+
+    .tiny-item {
+      cursor: pointer;
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    .separator {
+      width: 1px;
+      height: 1rem;
+      margin: 0 1.5rem 0 1rem;
+      padding: 0;
+
+      background: var(--g-600);
+    }
+  }
+}
